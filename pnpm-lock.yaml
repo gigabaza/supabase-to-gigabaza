@@ -919,7 +919,11 @@ importers:
         version: 0.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@sentry/nextjs':
         specifier: 'catalog:'
+<<<<<<< HEAD
         version: 10.27.0(@opentelemetry/context-async-hooks@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(encoding@0.1.13)(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)(supports-color@8.1.1)(webpack@5.105.4(esbuild@0.25.2))
+=======
+        version: 10.27.0(@opentelemetry/context-async-hooks@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(encoding@0.1.13)(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)(supports-color@8.1.1)(webpack@5.105.4(esbuild@0.25.2))
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
       '@std/path':
         specifier: npm:@jsr/std__path@^1.0.8
         version: '@jsr/std__path@1.0.8'
@@ -1075,7 +1079,11 @@ importers:
         version: 0.4.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       nuqs:
         specifier: 2.7.1
+<<<<<<< HEAD
         version: 2.7.1(@tanstack/react-router@1.168.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react-router@7.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+=======
+        version: 2.7.1(@tanstack/react-router@1.168.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react-router@7.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
       openai:
         specifier: ^4.104.0
         version: 4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76)
@@ -1325,7 +1333,522 @@ importers:
         version: 2.11.3(@types/node@22.13.14)(typescript@6.0.2)
       next-router-mock:
         specifier: ^0.9.13
+<<<<<<< HEAD
         version: 0.9.13(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+=======
+        version: 0.9.13(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+      node-mocks-http:
+        specifier: ^1.17.2
+        version: 1.17.2(@types/node@22.13.14)
+      postcss:
+        specifier: ^8.5.10
+        version: 8.5.10
+      raw-loader:
+        specifier: ^4.0.2
+        version: 4.0.2(webpack@5.105.4(esbuild@0.25.2))
+      require-in-the-middle:
+        specifier: ^8.0.0
+        version: 8.0.1(supports-color@8.1.1)
+      tailwindcss:
+        specifier: 'catalog:'
+        version: 4.2.4
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      tsx:
+        specifier: 'catalog:'
+        version: 4.20.3
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.2
+      vite:
+        specifier: 'catalog:'
+        version: 8.0.8(@types/node@22.13.14)(esbuild@0.25.2)(jiti@2.6.1)(sass@1.77.4)(terser@5.39.0)(tsx@4.20.3)(yaml@2.8.3)
+      vite-tsconfig-paths:
+        specifier: 'catalog:'
+        version: 6.1.1(supports-color@8.1.1)(typescript@6.0.2)(vite@8.0.8(@types/node@22.13.14)(esbuild@0.25.2)(jiti@2.6.1)(sass@1.77.4)(terser@5.39.0)(tsx@4.20.3)(yaml@2.8.3))
+      vitest:
+        specifier: 'catalog:'
+        version: 4.1.4(@opentelemetry/api@1.9.0)(@types/node@22.13.14)(@vitest/coverage-v8@4.1.4)(@vitest/ui@4.1.4)(jsdom@28.1.0(@noble/hashes@1.8.0)(supports-color@8.1.1))(msw@2.11.3(@types/node@22.13.14)(typescript@6.0.2))(vite@8.0.8(@types/node@22.13.14)(esbuild@0.25.2)(jiti@2.6.1)(sass@1.77.4)(terser@5.39.0)(tsx@4.20.3)(yaml@2.8.3))
+
+  apps/studio-giga:
+    dependencies:
+      '@ai-sdk/amazon-bedrock':
+        specifier: ^4.0.81
+        version: 4.0.81(zod@3.25.76)
+      '@ai-sdk/mcp':
+        specifier: ^1.0.25
+        version: 1.0.25(zod@3.25.76)
+      '@ai-sdk/openai':
+        specifier: ^3.0.41
+        version: 3.0.41(zod@3.25.76)
+      '@ai-sdk/provider':
+        specifier: ^3.0.8
+        version: 3.0.8
+      '@ai-sdk/provider-utils':
+        specifier: ^4.0.19
+        version: 4.0.20(zod@3.25.76)
+      '@ai-sdk/react':
+        specifier: ^3.0.118
+        version: 3.0.118(react@18.3.1)(zod@3.25.76)
+      '@aws-sdk/credential-providers':
+        specifier: ^3.830.0
+        version: 3.830.0
+      '@dagrejs/dagre':
+        specifier: ^1.0.4
+        version: 1.0.4
+      '@dnd-kit/core':
+        specifier: ^6.1.0
+        version: 6.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@dnd-kit/modifiers':
+        specifier: ^9.0.0
+        version: 9.0.0(@dnd-kit/core@6.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      '@dnd-kit/sortable':
+        specifier: ^8.0.0
+        version: 8.0.0(@dnd-kit/core@6.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      '@dnd-kit/utilities':
+        specifier: ^3.2.2
+        version: 3.2.2(react@18.3.1)
+      '@graphiql/react':
+        specifier: ^0.37.3
+        version: 0.37.3(@emotion/is-prop-valid@1.4.0)(@types/node@22.13.14)(@types/react-dom@18.3.0)(@types/react@18.3.3)(graphql-ws@5.14.1(graphql@16.11.0))(graphql@16.11.0)(immer@10.1.1)(react-compiler-runtime@19.1.0-rc.1(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1))
+      '@graphiql/toolkit':
+        specifier: ^0.11.3
+        version: 0.11.3(@types/node@22.13.14)(graphql-ws@5.14.1(graphql@16.11.0))(graphql@16.11.0)
+      '@hcaptcha/react-hcaptcha':
+        specifier: ^1.12.0
+        version: 1.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@heroicons/react':
+        specifier: ^2.1.3
+        version: 2.1.3(react@18.3.1)
+      '@hookform/resolvers':
+        specifier: ^3.1.1
+        version: 3.3.1(react-hook-form@7.72.1(react@18.3.1))
+      '@mjackson/multipart-parser':
+        specifier: ^0.10.1
+        version: 0.10.1
+      '@modelcontextprotocol/sdk':
+        specifier: ^1.29.0
+        version: 1.29.0(supports-color@8.1.1)(zod@3.25.76)
+      '@monaco-editor/react':
+        specifier: ^4.6.0
+        version: 4.7.0(monaco-editor@0.52.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@next/bundle-analyzer':
+        specifier: 16.2.3
+        version: 16.2.3
+      '@number-flow/react':
+        specifier: ^0.3.2
+        version: 0.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@sentry/nextjs':
+        specifier: 'catalog:'
+        version: 10.27.0(@opentelemetry/context-async-hooks@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(encoding@0.1.13)(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)(supports-color@8.1.1)(webpack@5.105.4(esbuild@0.25.2))
+      '@std/path':
+        specifier: npm:@jsr/std__path@^1.0.8
+        version: '@jsr/std__path@1.0.8'
+      '@stripe/react-stripe-js':
+        specifier: 6.1.0
+        version: 6.1.0(@stripe/stripe-js@9.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@stripe/stripe-js':
+        specifier: 9.1.0
+        version: 9.1.0
+      '@supabase/auth-js':
+        specifier: 'catalog:'
+        version: 2.104.1
+      '@supabase/mcp-server-supabase':
+        specifier: ^0.7.0
+        version: 0.7.0(@modelcontextprotocol/sdk@1.29.0(supports-color@8.1.1)(zod@3.25.76))(zod@3.25.76)
+      '@supabase/pg-meta':
+        specifier: workspace:*
+        version: link:../../packages/pg-meta
+      '@supabase/realtime-js':
+        specifier: 'catalog:'
+        version: 2.104.1
+      '@supabase/shared-types':
+        specifier: 0.1.88
+        version: 0.1.88
+      '@supabase/sql-to-rest':
+        specifier: ^0.1.6
+        version: 0.1.6(encoding@0.1.13)(supports-color@8.1.1)
+      '@supabase/supabase-js':
+        specifier: 'catalog:'
+        version: 2.104.1
+      '@tanstack/react-hotkeys':
+        specifier: ^0.9.1
+        version: 0.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-query':
+        specifier: ^5.0.0
+        version: 5.83.0(react@18.3.1)
+      '@tanstack/react-query-devtools':
+        specifier: ^5.0.0
+        version: 5.90.2(@tanstack/react-query@5.83.0(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-table':
+        specifier: ^8.21.3
+        version: 8.21.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-virtual':
+        specifier: ^3.13.12
+        version: 3.13.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/d3-geo':
+        specifier: ^3.1.0
+        version: 3.1.0
+      '@uidotdev/usehooks':
+        specifier: ^2.4.1
+        version: 2.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@vercel/functions':
+        specifier: ^2.1.0
+        version: 2.1.0(@aws-sdk/credential-provider-web-identity@3.830.0)
+      '@xyflow/react':
+        specifier: ^12.10.1
+        version: 12.10.1(@types/react@18.3.3)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@zip.js/zip.js':
+        specifier: ^2.7.29
+        version: 2.7.30
+      ai:
+        specifier: ^6.0.116
+        version: 6.0.116(zod@3.25.76)
+      ai-commands:
+        specifier: workspace:*
+        version: link:../../packages/ai-commands
+      awesome-debounce-promise:
+        specifier: ^2.1.0
+        version: 2.1.0
+      common:
+        specifier: workspace:*
+        version: link:../../packages/common
+      common-tags:
+        specifier: ^1.8.2
+        version: 1.8.2
+      config:
+        specifier: workspace:*
+        version: link:../../packages/config
+      cron-parser:
+        specifier: ^4.9.0
+        version: 4.9.0
+      cronstrue:
+        specifier: ^2.50.0
+        version: 2.50.0
+      crypto-js:
+        specifier: ^4.2.0
+        version: 4.2.0
+      d3-geo:
+        specifier: ^3.1.1
+        version: 3.1.1
+      dayjs:
+        specifier: ^1.11.10
+        version: 1.11.13
+      dev-tools:
+        specifier: workspace:*
+        version: link:../../packages/dev-tools
+      file-saver:
+        specifier: ^2.0.5
+        version: 2.0.5
+      framer-motion:
+        specifier: ^11.18.2
+        version: 11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      generate-password-browser:
+        specifier: ^1.1.0
+        version: 1.1.0
+      graphiql:
+        specifier: ^5.2.2
+        version: 5.2.2(@emotion/is-prop-valid@1.4.0)(@types/node@22.13.14)(@types/react-dom@18.3.0)(@types/react@18.3.3)(graphql-ws@5.14.1(graphql@16.11.0))(graphql@16.11.0)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1))
+      html-to-image:
+        specifier: ^1.11.13
+        version: 1.11.13
+      http-status:
+        specifier: ^2.1.0
+        version: 2.1.0
+      icons:
+        specifier: workspace:*
+        version: link:../../packages/icons
+      idb:
+        specifier: ^8.0.2
+        version: 8.0.2
+      immutability-helper:
+        specifier: ^3.1.1
+        version: 3.1.1
+      ip-num:
+        specifier: ^1.5.1
+        version: 1.5.1
+      json-logic-js:
+        specifier: ^2.0.2
+        version: 2.0.2
+      lodash:
+        specifier: ^4.18.1
+        version: 4.18.1
+      lucide-react:
+        specifier: ^0.436.0
+        version: 0.436.0(react@18.3.1)
+      markdown-table:
+        specifier: ^3.0.3
+        version: 3.0.3
+      memoize-one:
+        specifier: ^5.0.1
+        version: 5.2.1
+      mime-db:
+        specifier: ^1.53.0
+        version: 1.54.0
+      monaco-editor:
+        specifier: 0.52.2
+        version: 0.52.2
+      next:
+        specifier: 'catalog:'
+        version: 16.2.3(@babel/core@7.29.0(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
+      next-themes:
+        specifier: ^0.3.0
+        version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      nuqs:
+        specifier: 2.7.1
+        version: 2.7.1(@tanstack/react-router@1.168.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react-router@7.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      openai:
+        specifier: ^4.104.0
+        version: 4.104.0(encoding@0.1.13)(ws@8.19.0)(zod@3.25.76)
+      openapi-fetch:
+        specifier: 0.12.4
+        version: 0.12.4
+      papaparse:
+        specifier: ^5.3.1
+        version: 5.4.1
+      path-to-regexp:
+        specifier: ^8.0.0
+        version: 8.4.1
+      pg-minify:
+        specifier: ^1.6.3
+        version: 1.6.3
+      radix-ui:
+        specifier: 'catalog:'
+        version: 1.4.3(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      randombytes:
+        specifier: ^2.1.0
+        version: 2.1.0
+      react:
+        specifier: 'catalog:'
+        version: 18.3.1
+      react-data-grid:
+        specifier: 7.0.0-beta.47
+        version: 7.0.0-beta.47(patch_hash=803f02d6cede565990ab9675326b93195b98bcc6477a4811715405892c257488)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-day-picker:
+        specifier: ^9.11.1
+        version: 9.11.1(react@18.3.1)
+      react-dom:
+        specifier: 'catalog:'
+        version: 18.3.1(react@18.3.1)
+      react-error-boundary:
+        specifier: ^4.0.13
+        version: 4.0.13(react@18.3.1)
+      react-grid-layout:
+        specifier: ^1.4.2
+        version: 1.4.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-hook-form:
+        specifier: ^7.71.2
+        version: 7.72.1(react@18.3.1)
+      react-inlinesvg:
+        specifier: ^4.0.4
+        version: 4.0.4(react@18.3.1)
+      react-intersection-observer:
+        specifier: ^9.5.3
+        version: 9.8.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-markdown:
+        specifier: ^10.1.0
+        version: 10.1.0(@types/react@18.3.3)(react@18.3.1)(supports-color@8.1.1)
+      react-resizable:
+        specifier: 3.0.5
+        version: 3.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-simple-maps:
+        specifier: 4.0.0-beta.6
+        version: 4.0.0-beta.6(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-use:
+        specifier: ^17.5.0
+        version: 17.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      recharts:
+        specifier: 'catalog:'
+        version: 2.15.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      remark-gfm:
+        specifier: ^4.0.0
+        version: 4.0.1(supports-color@8.1.1)
+      shared-data:
+        specifier: workspace:*
+        version: link:../../packages/shared-data
+      sonner:
+        specifier: ^1.5.0
+        version: 1.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      sql-formatter:
+        specifier: ^15.0.0
+        version: 15.4.9
+      sqlstring:
+        specifier: ^2.3.2
+        version: 2.3.3
+      streamdown:
+        specifier: ^1.3.0
+        version: 1.3.0(@types/react@18.3.3)(react@18.3.1)(supports-color@8.1.1)
+      stripe-experiment-sync:
+        specifier: 1.0.31
+        version: 1.0.31(@types/node@22.13.14)(supports-color@8.1.1)
+      tus-js-client:
+        specifier: ^4.1.0
+        version: 4.1.0
+      ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
+      ui-patterns:
+        specifier: workspace:*
+        version: link:../../packages/ui-patterns
+      use-debounce:
+        specifier: ^7.0.1
+        version: 7.0.1(react@18.3.1)
+      use-stick-to-bottom:
+        specifier: ^1.1.1
+        version: 1.1.1(react@18.3.1)
+      uuid:
+        specifier: ^14.0.0
+        version: 14.0.0
+      valtio:
+        specifier: 'catalog:'
+        version: 1.12.0(@types/react@18.3.3)(react@18.3.1)
+      zod:
+        specifier: 'catalog:'
+        version: 3.25.76
+      zxcvbn:
+        specifier: ^4.4.2
+        version: 4.4.2
+    devDependencies:
+      '@faker-js/faker':
+        specifier: ^9.9.0
+        version: 9.9.0
+      '@graphql-codegen/cli':
+        specifier: 5.0.5
+        version: 5.0.5(@parcel/watcher@2.5.1)(@types/node@22.13.14)(encoding@0.1.13)(graphql-sock@1.0.1(graphql@16.11.0))(graphql@16.11.0)(supports-color@8.1.1)(typescript@6.0.2)
+      '@graphql-typed-document-node/core':
+        specifier: ^3.2.0
+        version: 3.2.0(graphql@16.11.0)
+      '@radix-ui/react-use-escape-keydown':
+        specifier: ^1.1.1
+        version: 1.1.1(@types/react@18.3.3)(react@18.3.1)
+      '@smithy/property-provider':
+        specifier: ^4.0.4
+        version: 4.2.8
+      '@supabase/postgres-meta':
+        specifier: ^0.64.4
+        version: 0.64.6(encoding@0.1.13)(supports-color@8.1.1)
+      '@testing-library/dom':
+        specifier: ^10.0.0
+        version: 10.4.1
+      '@testing-library/jest-dom':
+        specifier: ^6.6.0
+        version: 6.6.3
+      '@testing-library/react':
+        specifier: ^16.0.0
+        version: 16.0.0(@testing-library/dom@10.4.1)(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@testing-library/user-event':
+        specifier: ^14.0.0
+        version: 14.6.1(@testing-library/dom@10.4.1)
+      '@types/common-tags':
+        specifier: ^1.8.1
+        version: 1.8.4
+      '@types/crypto-js':
+        specifier: ^4.2.2
+        version: 4.2.2
+      '@types/file-saver':
+        specifier: ^2.0.2
+        version: 2.0.5
+      '@types/json-logic-js':
+        specifier: ^1.2.1
+        version: 1.2.1
+      '@types/lodash':
+        specifier: ^4.14.172
+        version: 4.17.16
+      '@types/markdown-table':
+        specifier: ^3.0.0
+        version: 3.0.0
+      '@types/mime-db':
+        specifier: ^1.43.5
+        version: 1.43.5
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.13.14
+      '@types/papaparse':
+        specifier: ^5.3.1
+        version: 5.3.9
+      '@types/randombytes':
+        specifier: ^2.0.3
+        version: 2.0.3
+      '@types/react':
+        specifier: 'catalog:'
+        version: 18.3.3
+      '@types/react-beautiful-dnd':
+        specifier: ^13.1.2
+        version: 13.1.5
+      '@types/react-datepicker':
+        specifier: ^4.3.4
+        version: 4.15.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@types/react-dom':
+        specifier: 'catalog:'
+        version: 18.3.0
+      '@types/react-grid-layout':
+        specifier: ^1.3.0
+        version: 1.3.3
+      '@types/react-simple-maps':
+        specifier: ^3.0.1
+        version: 3.0.4
+      '@types/recharts':
+        specifier: ^1.8.23
+        version: 1.8.25
+      '@types/sqlstring':
+        specifier: ^2.3.0
+        version: 2.3.0
+      '@types/zxcvbn':
+        specifier: ^4.4.1
+        version: 4.4.2
+      '@typescript-eslint/utils':
+        specifier: 8.48.0
+        version: 8.48.0(eslint@9.37.0(jiti@2.6.1)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.2)
+      '@vitejs/plugin-react':
+        specifier: 'catalog:'
+        version: 6.0.1(vite@8.0.8(@types/node@22.13.14)(esbuild@0.25.2)(jiti@2.6.1)(sass@1.77.4)(terser@5.39.0)(tsx@4.20.3)(yaml@2.8.3))
+      '@vitest/coverage-v8':
+        specifier: 'catalog:'
+        version: 4.1.4(vitest@4.1.4)
+      '@vitest/ui':
+        specifier: 'catalog:'
+        version: 4.1.4(vitest@4.1.4)
+      api-types:
+        specifier: workspace:*
+        version: link:../../packages/api-types
+      autoevals:
+        specifier: ^0.0.132
+        version: 0.0.132(ws@8.19.0)
+      braintrust:
+        specifier: ^3.9.0
+        version: 3.9.0(@aws-sdk/credential-provider-web-identity@3.830.0)(supports-color@8.1.1)(zod@3.25.76)
+      date-fns:
+        specifier: ^2.30.0
+        version: 2.30.0
+      eslint-config-supabase:
+        specifier: workspace:*
+        version: link:../../packages/eslint-config-supabase
+      eslint-plugin-barrel-files:
+        specifier: ^2.0.7
+        version: 2.0.7(eslint@9.37.0(jiti@2.6.1)(supports-color@8.1.1))
+      eslint-plugin-jsx-a11y:
+        specifier: ^6.10.2
+        version: 6.10.2(eslint@9.37.0(jiti@2.6.1)(supports-color@8.1.1))
+      graphql-ws:
+        specifier: 5.14.1
+        version: 5.14.1(graphql@16.11.0)
+      import-in-the-middle:
+        specifier: ^2.0.0
+        version: 2.0.0
+      jsdom-testing-mocks:
+        specifier: ^1.13.1
+        version: 1.13.1
+      libpg-query:
+        specifier: 17.6.0
+        version: 17.6.0
+      msw:
+        specifier: ^2.3.0
+        version: 2.11.3(@types/node@22.13.14)(typescript@6.0.2)
+      next-router-mock:
+        specifier: ^0.9.13
+        version: 0.9.13(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
       node-mocks-http:
         specifier: ^1.17.2
         version: 1.17.2(@types/node@22.13.14)
@@ -2212,7 +2735,11 @@ importers:
         version: link:../config
       next-router-mock:
         specifier: ^0.9.13
+<<<<<<< HEAD
         version: 0.9.13(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+=======
+        version: 0.9.13(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
       tailwindcss:
         specifier: 'catalog:'
         version: 4.2.4
@@ -2694,7 +3221,11 @@ importers:
         version: link:../config
       next-router-mock:
         specifier: ^0.9.13
+<<<<<<< HEAD
         version: 0.9.13(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+=======
+        version: 0.9.13(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
       tailwindcss:
         specifier: ^4.2.4
         version: 4.2.4
@@ -11387,20 +11918,6 @@ packages:
       react-dom:
         optional: true
 
-  framer-motion@12.9.5:
-    resolution: {integrity: sha512-GeRN4aX3g+pdGVTLRU0yC5SYeKY1DigyrnJjcyST2dKp/OA9sNusW5DUImZF96S/eBnGW3mNGRt7PteDJuT4Bg==}
-    peerDependencies:
-      '@emotion/is-prop-valid': '*'
-      react: ^18.0.0 || ^19.0.0
-      react-dom: ^18.0.0 || ^19.0.0
-    peerDependenciesMeta:
-      '@emotion/is-prop-valid':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-
   fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
     engines: {node: '>= 0.6'}
@@ -13714,17 +14231,11 @@ packages:
   motion-dom@12.38.0:
     resolution: {integrity: sha512-pdkHLD8QYRp8VfiNLb8xIBJis1byQ9gPT3Jnh2jqfFtAsWUA3dEepDlsWe/xMpO8McV+VdpKVcp+E+TGJEtOoA==}
 
-  motion-dom@12.9.4:
-    resolution: {integrity: sha512-25TWkQPj5I18m+qVjXGtCsxboY11DaRC5HMjd29tHKExazW4Zf4XtAagBdLpyKsVuAxEQ6cx5/E4AB21PFpLnQ==}
-
   motion-utils@11.18.1:
     resolution: {integrity: sha512-49Kt+HKjtbJKLtgO/LKj9Ld+6vw9BjH5d9sc40R/kVyH8GLAXgT42M2NnuPcJNuA3s9ZfZBUcwIgpmZWGEE+hA==}
 
   motion-utils@12.36.0:
     resolution: {integrity: sha512-eHWisygbiwVvf6PZ1vhaHCLamvkSbPIeAYxWUuL3a2PD/TROgE7FvfHWTIH4vMl798QLfMw15nRqIaRDXTlYRg==}
-
-  motion-utils@12.9.4:
-    resolution: {integrity: sha512-BW3I65zeM76CMsfh3kHid9ansEJk9Qvl+K5cu4DVHKGsI52n76OJ4z2CUJUV+Mn3uEP9k1JJA3tClG0ggSrRcg==}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -19339,7 +19850,7 @@ snapshots:
       codemirror: 5.65.15
       codemirror-graphql: 2.2.1(@codemirror/language@6.11.0)(codemirror@5.65.15)(graphql@16.11.0)
       copy-to-clipboard: 3.3.3
-      framer-motion: 12.9.5(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      framer-motion: 12.38.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       get-value: 3.0.1
       graphql: 16.11.0
       graphql-language-service: 5.3.1(graphql@16.11.0)
@@ -20473,6 +20984,13 @@ snapshots:
   '@monaco-editor/react@4.6.0(monaco-editor@0.52.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.52.2)
+      monaco-editor: 0.52.2
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@monaco-editor/react@4.7.0(monaco-editor@0.52.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@monaco-editor/loader': 1.5.0
       monaco-editor: 0.52.2
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -23345,7 +23863,11 @@ snapshots:
       - supports-color
       - webpack
 
+<<<<<<< HEAD
   '@sentry/nextjs@10.27.0(@opentelemetry/context-async-hooks@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(encoding@0.1.13)(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)(supports-color@8.1.1)(webpack@5.105.4(esbuild@0.25.2))':
+=======
+  '@sentry/nextjs@10.27.0(@opentelemetry/context-async-hooks@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(encoding@0.1.13)(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1)(supports-color@8.1.1)(webpack@5.105.4(esbuild@0.25.2))':
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/semantic-conventions': 1.38.0
@@ -28245,16 +28767,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  framer-motion@12.9.5(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      motion-dom: 12.9.4
-      motion-utils: 12.9.4
-      tslib: 2.8.1
-    optionalDependencies:
-      '@emotion/is-prop-valid': 1.4.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
   fresh@0.5.2: {}
 
   fresh@2.0.0: {}
@@ -31237,15 +31749,9 @@ snapshots:
     dependencies:
       motion-utils: 12.36.0
 
-  motion-dom@12.9.4:
-    dependencies:
-      motion-utils: 12.9.4
-
   motion-utils@11.18.1: {}
 
   motion-utils@12.36.0: {}
-
-  motion-utils@12.9.4: {}
 
   mri@1.2.0: {}
 
@@ -31360,7 +31866,11 @@ snapshots:
     dependencies:
       js-yaml-loader: 1.2.2
 
+<<<<<<< HEAD
   next-router-mock@0.9.13(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1):
+=======
+  next-router-mock@0.9.13(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react@18.3.1):
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
     dependencies:
       next: 16.2.6(@babel/core@7.29.0(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
       react: 18.3.1
@@ -31695,7 +32205,11 @@ snapshots:
       mitt: 3.0.1
       next: 15.5.18(@babel/core@7.29.0(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
 
+<<<<<<< HEAD
   nuqs@2.7.1(@tanstack/react-router@1.168.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@16.2.6(@opentelemetry/api@1.9.0)(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react-router@7.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+=======
+  nuqs@2.7.1(@tanstack/react-router@1.168.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@16.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4))(react-router@7.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+>>>>>>> 60ce7ee964 (feat: copy-pasted studio to be able to chage)
     dependencies:
       '@standard-schema/spec': 1.0.0
       react: 18.3.1
