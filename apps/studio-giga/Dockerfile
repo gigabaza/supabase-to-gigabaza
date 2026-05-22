@@ -1,12 +1,12 @@
 # To be run in the root of the turbo monorepo
 # NOTE: It's highly recommended to use the new builder, Buildkit. https://docs.docker.com/build/buildkit/
 ## USAGE:
-# Build:        docker build . -f apps/studio-giga/Dockerfile --target production -t studio-giga:latest
+# Build:        docker build . -f apps/studio/Dockerfile --target production -t studio:latest
 # Run:          docker run -p 3000:3000 supabase/studio
 # Deploy:       docker push supabase/studio:latest
 # Clean build:
 #    docker builder prune
-#    docker build . -f apps/studio-giga/Dockerfile --target production -t studio-giga:latest --no-cache
+#    docker build . -f apps/studio/Dockerfile --target production -t studio:latest --no-cache
 
 FROM node:22-slim AS base
 ENV PNPM_HOME="/pnpm"
@@ -31,7 +31,7 @@ WORKDIR /app
 FROM base AS turbo
 COPY . .
 
-RUN pnpm dlx turbo@2.9.3 prune studio-giga --docker
+RUN pnpm dlx turbo@2.9.3 prune studio --docker
 
 # Install dev dependencies (only if needed)
 FROM base AS deps
@@ -47,19 +47,19 @@ FROM deps AS dev
 COPY --from=turbo /app/out/full ./
 ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 8082
-CMD ["pnpm", "dev:studio-giga"]
+CMD ["pnpm", "dev:studio"]
 
 # Compile Next.js
 FROM dev AS builder
 
-RUN pnpm --filter studio-giga exec next build
+RUN pnpm --filter studio exec next build
 
 # Copy only compiled code and dependencies
 FROM base AS production
-COPY --from=builder /app/apps/studio-giga/public ./apps/studio-giga/public
-COPY --from=builder /app/apps/studio-giga/.next/standalone ./
-COPY --from=builder /app/apps/studio-giga/.next/static ./apps/studio-giga/.next/static
+COPY --from=builder /app/apps/studio/public ./apps/studio/public
+COPY --from=builder /app/apps/studio/.next/standalone ./
+COPY --from=builder /app/apps/studio/.next/static ./apps/studio/.next/static
 EXPOSE 3000
 ENTRYPOINT ["docker-entrypoint.sh"]
 HEALTHCHECK --interval=5s --timeout=5s --retries=3 CMD node -e "fetch('http://localhost:3000/api/platform/profile').then((r) => {if (r.status !== 200) throw new Error(r.status)})"
-CMD ["node", "apps/studio-giga/server.js"]
+CMD ["node", "apps/studio/server.js"]
